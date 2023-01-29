@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a>My Website</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html" target="_self">Profile</a></li>
+                    <li><a href="login.html" target="_self">Login</a></li>
+                    <li><a href="registration.html" target="_self">Register</a></li>
+                    <li><a href="contactUs.html" target="_self">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page_ref">
+                <h2>Registration</h2>
+            </section>
+
+            <section class="reg_det">
+                <form>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>First Name:</th>
+                                <td><input type="text" class="txt_field" placeholder="Enter first name"></td>
+                            </tr>
+                            <tr>
+                                <th>Last Name:</th>
+                                <td><input type="text" class="txt_field" placeholder="Enter last name"></td>
+                            </tr>
+                            <tr>
+                                <th>Gender:</th>
+                                <td><input type="radio" name="gender">Male
+                                <input type="radio" name="gender">Female
+                                <input type="radio" name="gender">Other</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td><input type="email" class="txt_field" placeholder="Enter Email"></td>
+                            </tr>
+                            <tr>
+                                <th>New Password:</th>
+                                <td><input type="password" class="txt_field" placeholder="Enter Password"></td>
+                            </tr>
+                            <tr>
+                                <th>Languages Interested:</th>
+                                <td><input type="checkbox">C
+                                <input type="checkbox">C++
+                                <input type="checkbox">Java
+                                <input type="checkbox">Python</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" class="button">
+                    <input type="reset"class="button">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyrights &copy CVR College Of Engineering</p>
+        </footer>
+    </div>
+</body>
+</html>

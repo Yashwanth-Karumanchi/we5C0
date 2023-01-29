@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    padding: 20px;
+}
+body{
+    background: url("../images/bgimage.webp");
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 2px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 5px;
+}
+
+header nav ul li a{
+    color: grey;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    color:rgb(33, 130, 214);
+    font-weight: bolder;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+    word-spacing: 1px;
+}
+
+header img{
+    margin-top: 4px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+header nav ul li:hover{
+    transform: translateY(-5px);
+}
+
+header nav ul li a:hover{
+    font-size: 1.5rem;
+}
+
+main{
+    font-size: larger;
+}
+
+footer{
+    background-color: rgb(173, 210, 243);
+    line-height: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(32, 32, 53);
+    height: 40px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: large;
+}
+
+/* INDEX ------------------------------------------------------------------------------------------------------*/
+.page_ref{
+    text-align: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    animation: about_anim 1s ease-in-out infinite;
+}
+
+@keyframes about_anim{
+    0%{
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    }
+    25%{
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);        
+    }
+    50%{
+        background-color: #85FFBD;
+        background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    }
+    100%{
+        background-image: linear-gradient( 68.4deg,  rgba(248,182,204,1) 0.5%, rgba(192,198,230,1) 49%, rgba(225,246,240,1) 99.8% );
+    }
+}
+
+.page_ref p{
+    letter-spacing: 1px;
+    width: 50%;
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(3, 36, 73);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.grid_box{
+    display: grid;
+}
+
+.grid_box .item{
+    margin: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: aliceblue;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-out;
+    transition: transform 1s ease-in-out;
+}
+
+.grid_box .item:hover{
+    transform: rotateX(360deg);
+    animation: about_anim 1s ease-in-out infinite;
+}
+
+.grid_box .item p{
+    margin: 20px;
+}
+
+.grid_box .item h2{
+    padding-top: 10px;
+    color: maroon;
+}
+
+.index{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+/* END OF INDEX ------------------------------------------------------------------------------------------------*/
+
+/* PROFILE ------------------------------------------------------------------------------------------------------*/
+
+.profile h2{
+    background-color: #39395f; 
+    padding-left: 10px;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+
+.profile_ref{
+    margin: 15px;
+    margin-left: -2px;
+}
+
+.scroll{
+    overflow-x: auto;
+}
+
+.profile_table{
+    width: 100%;
+    text-align: center; 
+    font-size: large;
+    border-spacing: 20px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.profile_table th{
+    border: 1px solid black;
+    padding: 20px;
+} 
+
+.profile_table td{
+    border: 1px solid black;
+    padding: 20px;
+} 
+
+.profile_ref p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile ul, ol{
+    margin-left: 20px;
+}
+/* END OF PROFILE ---------------------------------------------------------------------------------------------*/
+
+/* CONTACT US ------------------------------------------------------------------------------------------------------*/
+.contactUs{
+    text-align: center;
+}
+
+.contact_det{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_det label{
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.phone, .mail{
+    padding-top: 20px;
+}
+/*END OF CONTACT US -----------------------------------------------------------------------------------------*/
+
+/* REGISTER ------------------------------------------------------------------------------------------------------*/
+@keyframes button_anim{
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+.reg_det tr{
+    text-align: left;
+}
+
+.reg_det th{
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.reg_det td{
+    word-spacing: 20px;
+    padding-left: 5px;
+}
+
+.reg_det{
+    width: 690px;
+    height: 360px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.reg_det .txt_field{
+    padding: 10px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    outline: none;
+    background: transparent;
+    margin: 5px;
+}
+/*END OF REGISTER --------------------------------------------------------------------------------------------*/
+
+/* LOGIN ------------------------------------------------------------------------------------------------------*/
+.login_det{
+    width: 650px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login_det .field{
+    padding: 12px 5px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: groove;
+    outline: none;
+    background-color: transparent;
+}
+
+.login_det p{
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px
+}
+
+.button{
+    width: 180px;
+    background-color: rgb(141, 189, 232);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(93, 164, 227);
+    animation: button_anim 2s infinite;
+}
+/* END OF LOGIN --------------------------------------------------------------------------------------------------*/
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px){
+    .grid_box{grid-template-columns: repeat(2, 4fr);}
+}
+
+@media screen and (max-width: 700px){
+    header{height: 80px;}
+    .reg_det, .login_det{width: 400px; height: 450px;}
+}
+
+@media screen and (min-width: 600px){
+    .grid_box{grid-template-columns: repeat(3, 4fr);}
+}
