@@ -1,25 +1,19 @@
 function plot(dates, temps){
-    console.log(dates.length)
-    console.log(temps)
+  console.log(dates)
+  console.log(temps)
 
-    const ctx = document.getElementById('myChart');
+  document.getElementById("chart").innerHTML="<canvas id='myChart'></canvas>"
+  var ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [dates[0], dates[1], dates[2], dates[3], dates[4]],
+      labels: dates,
       datasets: [{
-        label: '# of Votes',
-        data: [temps[0], temps[1], temps[2], temps[3], temps[4]],
+        label: 'temp',
+        data: temps,
         borderWidth: 1
       }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
     }
   });
 }

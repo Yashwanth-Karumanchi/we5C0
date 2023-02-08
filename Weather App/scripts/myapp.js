@@ -14,20 +14,18 @@ function myapp(city){
         })
     })
 
-    let dates = [];
-    let temps = [];
-    dates.push("Hello");
-
+    
     forecast.then((res) => {
         res.json().then((data) => {
-            
+            var dates = [];
+            var temps = [];
+                
             for(let i = 0; i < data.list.length; i+=8){
-                let t = String(data.list[i].dt_txt).split(" ");
-                dates.push(t[0]);
-                temps.push(Number((data.list[i].main.temp) - 273.15).toFixed(2));
+                dates.push(data.list[i].dt_txt.split(" ")[0]);
+                temps.push(Number(Number((data.list[i].main.temp) - 273.15).toFixed(2)));
             }
+            console.log(dates[0])
+            plot(dates, temps)
         })
     })
-    console.log(dates)
-    plot(dates, temps)
 }
